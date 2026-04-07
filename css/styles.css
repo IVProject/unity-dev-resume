@@ -1,0 +1,30 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+}
+
+.timeline-line::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #374151;
+}
+
+@media (min-width: 768px) {
+    .timeline-line::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

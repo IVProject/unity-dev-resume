@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Владислав Иванюк - Unity Разработчик</title>
+    <script src="./scripts/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="bg-gray-900 text-gray-300 font-sans antialiased leading-relaxed selection:bg-brand-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-xl font-bold text-white tracking-wider">VI<span class="text-brand-500">.</span></a>
+                </div>
+                
+                <div class="flex items-center gap-4 md:gap-8">
+                    <div class="hidden md:block">
+                        <div class="flex items-baseline space-x-8">
+                            <a href="#about" class="hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n-key="nav.about">Обо мне</a>
+                            <a href="#skills" class="hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n-key="nav.skills">Навыки</a>
+                            <a href="#experience" class="hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n-key="nav.experience">Опыт работы</a>
+                            <a href="#education" class="hover:text-white transition-colors px-3 py-2 rounded-md text-sm font-medium" data-i18n-key="nav.education">Образование</a>
+                        </div>
+                    </div>
+                    <button id="lang-toggle" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors focus:outline-none bg-gray-800 px-3 py-1.5 rounded-lg border border-gray-700">
+                        <i class="ph ph-translate text-xl"></i>
+                        <span class="font-medium text-sm" data-i18n-key="controls.toggleLabel">RU</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
+        <div class="flex-1 text-center lg:text-left">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6" data-i18n-key="hero.name">Владислав Иванюк</h1>
+            <h3 class="text-2xl sm:text-3xl text-gray-400 font-medium mb-6" data-i18n-key="hero.title">Senior Unity Разработчик</h3>
+            <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8 text-gray-400">
+                <div class="flex items-center gap-2">
+                    <i class="ph ph-map-pin text-xl"></i>
+                    <span data-i18n-key="hero.location">Нежин, Украина</span>
+                </div>
+                <div class="hidden sm:block text-gray-600">•</div>
+                <div class="flex items-center gap-2">
+                    <i class="ph ph-envelope-simple text-xl"></i>
+                    <a href="mailto:slimprod.game@gmail.com" class="hover:text-brand-500 transition-colors">slimprod.game@gmail.com</a>
+                </div>
+                <div class="hidden sm:block text-gray-600">•</div>
+                <div class="flex items-center gap-2">
+                    <i class="ph ph-phone text-xl"></i>
+                    <a href="tel:+380960775978" class="hover:text-brand-500 transition-colors">+380 96 077 5978</a>
+                </div>
+            </div>
+            <div class="flex gap-4 justify-center lg:justify-start">
+                <a href="#experience" class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-3 rounded-lg font-medium transition-colors shadow-lg shadow-brand-500/20" data-i18n-key="hero.viewExperience">Смотреть опыт</a>
+                <a href="mailto:slimprod.game@gmail.com" class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors border border-gray-700" data-i18n-key="hero.contactButton">Связаться</a>
+            </div>
+        </div>
+        <div class="flex-shrink-0 relative">
+            <div class="max-w-48 max-h-48 sm:max-w-64 sm:max-h-64 border-4 border-gray-800 overflow-hidden shadow-2xl relative z-10">
+                <img src="/assets/images/my-photo.png" alt="" class="w-full h-full object-contain">
+            </div>
+            <div class="absolute inset-0 bg-brand-500 blur-3xl opacity-20 -z-10 scale-110"></div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-800/50 border-y border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center justify-center gap-3">
+                <i class="ph ph-user-circle text-brand-500"></i> <span data-i18n-key="about.title">Обо мне</span>
+            </h2>
+            <p class="text-lg text-gray-300 leading-relaxed" data-i18n-key="about.content" data-i18n-html></p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3">
+            <i class="ph ph-code text-brand-500"></i> <span data-i18n-key="skills.title">Технические навыки</span>
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-brand-500/50 transition-colors">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-3 bg-gray-900 rounded-lg text-brand-500">
+                        <i class="ph ph-brackets-curly text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white" data-i18n-key="skills.languages">Языки программирования</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">C#</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">C++</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Java</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Objective-C</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">JavaScript</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-brand-500/50 transition-colors">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-3 bg-gray-900 rounded-lg text-brand-500">
+                        <i class="ph ph-game-controller text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white" data-i18n-key="skills.unityCore">Unity Core</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Lifecycle</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">ScriptableObjects</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Custom Editor Tools</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Addressables</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Asset Bundles</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">UI Toolkit/UGUI</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Animations</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">NavMesh</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">AI Systems</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">ECS</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Job System</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-brand-500/50 transition-colors">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-3 bg-gray-900 rounded-lg text-brand-500">
+                        <i class="ph ph-tree-structure text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white" data-i18n-key="skills.architecture">Архитектура</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">OOP</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">SOLID</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">DI (Zenject)</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">UniRx (Reactive)</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">UniTask (Async)</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm" data-i18n-key="skills.designPatterns">Паттерны проектирования</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-brand-500/50 transition-colors">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-3 bg-gray-900 rounded-lg text-brand-500">
+                        <i class="ph ph-device-mobile text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white" data-i18n-key="skills.nativeDevelopment">Нативная разработка</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm" data-i18n-key="skills.customPlugins">Кастомные Unity Плагины</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">iOS</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Android</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">WebGL</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-brand-500/50 transition-colors">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-3 bg-gray-900 rounded-lg text-brand-500">
+                        <i class="ph ph-wrench text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white" data-i18n-key="skills.tools">Инструменты</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Git (Fork, SourceTree)</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">XCode</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Android Studio</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">CI/CD</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm" data-i18n-key="skills.profiler">Profiler &amp; Оптимизация</span>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-brand-500/50 transition-colors">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-3 bg-gray-900 rounded-lg text-brand-500">
+                        <i class="ph ph-puzzle-piece text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white" data-i18n-key="skills.sdks">SDKs</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Firebase</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Facebook SDK</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Steamworks SDK</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Photon</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">Mirror</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">SignalR</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">AdMob</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">IronSource</span>
+                    <span class="px-3 py-1 bg-gray-900 text-gray-300 rounded-full text-sm">AppLovin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-gray-800/50 border-y border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3">
+                <i class="ph ph-briefcase text-brand-500"></i> <span data-i18n-key="experience.title">Опыт работы</span>
+            </h2>
+
+            <div class="relative timeline-line">
+                <div class="relative pl-12 md:pl-0 mb-12 flex flex-col md:flex-row md:justify-between items-start w-full group">
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-brand-500 border-4 border-gray-900 z-10 group-hover:scale-125 transition-transform"></div>
+                    <div class="md:w-[45%] md:text-right md:pr-8 mb-2 md:mb-0">
+                        <h3 class="text-xl font-bold text-white">Up4 Play</h3>
+                        <p class="text-brand-500 font-medium">Unity Developer</p>
+                        <p class="text-sm text-gray-400 mt-1"><i class="ph ph-calendar-blank inline-block mr-1"></i> <span data-i18n-key="experience.up4Play.date">4 месяца • Украина</span></p>
+                    </div>
+                    <div class="md:w-[45%] md:pl-8">
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 text-sm">
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.up4Play.bullet1">Работа в составе технической core-команды, разработка переиспользуемых модулей и систем для различных проектов.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.up4Play.bullet2">Создание и поддержка технической документации для внутренних инструментов.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.up4Play.bullet3">Регулярное проведение код-ревью для обеспечения архитектурной целостности.</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative pl-12 md:pl-0 mb-12 flex flex-col md:flex-row-reverse md:justify-between items-start w-full group">
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-gray-600 border-4 border-gray-900 z-10 group-hover:bg-brand-500 transition-colors"></div>
+                    <div class="md:w-[45%] md:pl-8 mb-2 md:mb-0">
+                        <h3 class="text-xl font-bold text-white">Suitsme (Genesis)</h3>
+                        <p class="text-brand-500 font-medium">Unity Developer</p>
+                        <p class="text-sm text-gray-400 mt-1"><i class="ph ph-calendar-blank inline-block mr-1"></i> <span data-i18n-key="experience.suitsme.date">28 месяцев • Украина</span></p>
+                    </div>
+                    <div class="md:w-[45%] md:text-right md:pr-8">
+                        <ul class="text-gray-300 space-y-2 text-sm list-none">
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.suitsme.bullet1">Разработка базовых систем и геймплейных механик для флагманских проектов.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.suitsme.bullet2">Модернизация legacy-кода, улучшение производительности.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.suitsme.bullet3">Создание нативных плагинов для Android, iOS и WebGL (Java, Objective-C, JS).</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.suitsme.bullet4">Руководство портированием на WebGL (оптимизация и фиксы).</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative pl-12 md:pl-0 mb-12 flex flex-col md:flex-row md:justify-between items-start w-full group">
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-gray-600 border-4 border-gray-900 z-10 group-hover:bg-brand-500 transition-colors"></div>
+                    <div class="md:w-[45%] md:text-right md:pr-8 mb-2 md:mb-0">
+                        <h3 class="text-xl font-bold text-white">Dragons Lake <span class="text-sm font-normal text-gray-400">(Room 8 Group)</span></h3>
+                        <p class="text-brand-500 font-medium">Unity Developer</p>
+                        <p class="text-sm text-gray-400 mt-1"><i class="ph ph-calendar-blank inline-block mr-1"></i> <span data-i18n-key="experience.dragonsLake.date">9 месяцев • International</span></p>
+                    </div>
+                    <div class="md:w-[45%] md:pl-8">
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 text-sm">
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.dragonsLake.bullet1">Реализация сложных механик для крупных внешних проектов.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.dragonsLake.bullet2">Анализ и оптимизация структуры игры и архитектуры.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.dragonsLake.bullet3">Выявление и исправление критических логических багов в крупной кодовой базе.</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative pl-12 md:pl-0 mb-12 flex flex-col md:flex-row-reverse md:justify-between items-start w-full group">
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-gray-600 border-4 border-gray-900 z-10 group-hover:bg-brand-500 transition-colors"></div>
+                    <div class="md:w-[45%] md:pl-8 mb-2 md:mb-0">
+                        <h3 class="text-xl font-bold text-white">Arrible</h3>
+                        <p class="text-brand-500 font-medium">Unity Developer</p>
+                        <p class="text-sm text-gray-400 mt-1"><i class="ph ph-calendar-blank inline-block mr-1"></i> <span data-i18n-key="experience.arrible.date">19 месяцев • Украина</span></p>
+                    </div>
+                    <div class="md:w-[45%] md:text-right md:pr-8">
+                        <ul class="text-gray-300 space-y-2 text-sm list-none">
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.arrible.bullet1">Проектирование эффективных архитектур для быстрого роста проектов.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.arrible.bullet2">Управление полным циклом разработки от концепта до релиза.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.arrible.bullet3">Менторство junior-разработчиков, технические интервью.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.arrible.bullet4">Разработка проприетарных SDK.</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative pl-12 md:pl-0 mb-12 flex flex-col md:flex-row md:justify-between items-start w-full group">
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-gray-600 border-4 border-gray-900 z-10 group-hover:bg-brand-500 transition-colors"></div>
+                    <div class="md:w-[45%] md:text-right md:pr-8 mb-2 md:mb-0">
+                        <h3 class="text-xl font-bold text-white">Ukel</h3>
+                        <p class="text-brand-500 font-medium">Unity Developer</p>
+                        <p class="text-sm text-gray-400 mt-1"><i class="ph ph-calendar-blank inline-block mr-1"></i> <span data-i18n-key="experience.ukel.date">14 месяцев • Украина</span></p>
+                    </div>
+                    <div class="md:w-[45%] md:pl-8">
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 text-sm">
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.ukel.bullet1">Поддержка и улучшение legacy-кода в мобильных live-service проектах.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.ukel.bullet2">Консультации по сложным задачам и специфике Unity.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.ukel.bullet3">Улучшение рабочих процессов для ускорения баг-трекинга.</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="relative pl-12 md:pl-0 mb-12 flex flex-col md:flex-row-reverse md:justify-between items-start w-full group">
+                    <div class="absolute left-[11px] md:left-1/2 md:-translate-x-1/2 w-4 h-4 rounded-full bg-gray-600 border-4 border-gray-900 z-10 group-hover:bg-brand-500 transition-colors"></div>
+                    <div class="md:w-[45%] md:pl-8 mb-2 md:mb-0">
+                        <h3 class="text-xl font-bold text-white">Metekol &amp; Source</h3>
+                        <p class="text-brand-500 font-medium">Unity Developer</p>
+                        <p class="text-sm text-gray-400 mt-1"><i class="ph ph-calendar-blank inline-block mr-1"></i> <span data-i18n-key="experience.metekol.date">17 месяцев суммарно • Украина</span></p>
+                    </div>
+                    <div class="md:w-[45%] md:text-right md:pr-8">
+                        <ul class="text-gray-300 space-y-2 text-sm list-none">
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.metekol.bullet1">Экспертные консультации по архитектуре ПО.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.metekol.bullet2">Разработка кастомных приложений для симуляций и обучения.</span></li>
+                            <li><span class="md:hidden text-brand-500 mr-2">•</span><span data-i18n-key="experience.metekol.bullet3">Системы автоматизации рутинных задач.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3">
+            <i class="ph ph-graduation-cap text-brand-500"></i> <span data-i18n-key="education.title">Образование</span>
+        </h2>
+        
+        <div class="bg-gradient-to-r from-gray-800 to-gray-800/50 rounded-2xl p-8 border border-gray-700 hover:border-brand-500/50 transition-colors flex flex-col sm:flex-row items-center gap-6">
+            <div class="p-4 bg-gray-900 rounded-full text-brand-500 shrink-0">
+                <i class="ph ph-student text-4xl"></i>
+            </div>
+            <div class="text-center sm:text-left">
+                <h3 class="text-2xl font-bold text-white mb-2" data-i18n-key="education.university">Нежинский государственный университет имени Николая Гоголя</h3>
+                <p class="text-xl text-brand-500 font-medium mb-1" data-i18n-key="education.degree">Бакалавр компьютерных наук</p>
+                <p class="text-gray-400" data-i18n-key="education.description">Технический специалист в области прикладных наук и технологий.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+            <p class="text-gray-500 mb-4" data-i18n-key="footer.copyright">© 2026 Владислав Иванюк. Все права защищены.</p>
+            <div class="flex space-x-6">
+                <a href="mailto:slimprod.game@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                    <span class="sr-only">Email</span>
+                    <i class="ph ph-envelope-simple текст-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
