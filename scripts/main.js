@@ -16,7 +16,9 @@ const translations = {
             title: 'Senior Unity Разработчик',
             location: 'Нежин, Украина',
             viewExperience: 'Смотреть опыт',
-            contactButton: 'Связаться'
+            contactButton: 'Связаться',
+            downloadResume: 'Скачать резюме',
+            github: 'IVProject'
         },
         about: {
             title: 'Обо мне',
@@ -102,7 +104,9 @@ const translations = {
             title: 'Senior Unity Developer',
             location: 'Nizhyn, Ukraine',
             viewExperience: 'View Experience',
-            contactButton: 'Contact'
+            contactButton: 'Contact',
+            downloadResume: 'Download Resume',
+            github: 'IVProject'
         },
         about: {
             title: 'Professional Summary',
